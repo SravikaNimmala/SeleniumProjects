@@ -1,3 +1,3 @@
 # Mind Q Systems
 
-- Will be updated everyday.
+- Will be updated for every class.
