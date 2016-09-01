@@ -1,0 +1,188 @@
+*******************************1/3/2016: (8_12)***************************************
+-> This class we learned about 
+1:conditions : if-else
+			if(condition)
+			{
+				Statements
+			}
+			else if(for this condition)
+			{
+				Statements
+			}
+			else{
+				If not the above 2 conditions; do this.
+			}
+	We did age example
+2:Loops: While and for
+			initialization of a variable;
+			while(variable reaches this number){
+				do this
+				initialization++ // increment.
+			}
+		: for(variable initialization;variable<=number; increment variable){
+			does this condition till reached increment.
+		}
+	We did marks and tables example
+	
+3: In sencha doc, Dynamic form/simple form:
+		We wrote a manual test case for the simple form
+		We verified if the value we entered is taken or not in the fields.
+		For that we used webelement.getAttribute("value").
+		We will further use JUnit framework to test cases if they have passed or failed.
+*********************************1/4/2016: (8_13)****************************************
+-> 
+1:This class we are writing loops for values in a time dropdown which have to select tag.
+	String userTime = "time";
+	for(condition){
+		String time = find the parent tag that contains the multiple tags each with different time;[Generating dynamic XPath]
+		if(time.equals(userTime)){
+			Then select it. 
+		}
+	}
+2:  How to select stuff from the dropdown without a select tag.
+		Click on the dropdown
+		find total number of items in the dropdown
+		iterate that many times for each iteration pick the text and compare with user interested text.
+		If that matches click that element. Else iterate the loop till it reaches the end.
+3:	To get number of items in a tag; we use .size();
+	int object = driver.findElements(By.xpath("xpath expression")).size();
+4:	To get the text in each tag; we use .getText();
+	String object = driver.findElement(By.xpath("xpath expression")).getText();
+->
+***********************************1/5/2016 (8_14)*****************************************
+Checkout Form:
+Selecting a state when no <select> tag is mentioned in the XML code. 
+Binding a grid to a form: O_BindingAGridToAForm
+		Steps:
+		1. Find the total number of rows in that table/grid.
+		2. Iterate through that total Number of rows.
+		3. In each Iteration try to find out the company name.
+		4. Compare with the user interested company name with current iteration name
+		5. If both are matching then click on that company name.
+		6. Verify the data of company name selected is populated correctly.
+			a.Verify Company name.
+			b.Verify company price.
+		Notes:
+		columnContainedName.contains(userInterestedName); This statement selects even if part of the name is given
+		Verify using getAttribute("value");
+********************************1/6/2016 (8_16) *********************************************
+Grid to Grid Dnd: P_FGridTOFOrmDND
+	This class we learn how to drag and drop elements
+	We have to find the xpath of the item we would like to drag = source;
+		then find the xpath of the element we would like to drop in = destination/target;
+	Create to seperate webelements for the source and target.
+	Using Actions class we create an object for the webdriver object(dnd); Actions act = new Actions(dnd);
+	Then we use .dragAnddrop(source, target).build().perform(), to make the drag and drop happen. 
+	Actions class has many advantages of clicking. .build()= Builds the sequence we have given. 
+	Practice: Grid to grid; Custom drag and drop; Simple task.
+**************************1/7/2016 (8_19)***********************************************
+JUnit framework:
+	
+How and why use JUnit framework:
+	-Till now we were manually verifying by using println or console statements
+	-No possibility for individual test cases.
+		->In main method we are trying to write code for all forms[Ex.Dynamic form].
+		->We are not able to differentiate the test cases.
+	-Code after an error wouldn't compile.
+		->Since no individual test case, if by any chance any line
+		or set of code fails we would be blocked verifying the
+		next functionality as the program terminates.
+	-Need to have a report of passed and failed test cases.
+	-We need to have check points.[Particular text is present: In build assertion features.]
+Why?:
+	It is a framework or tool meant for developers. But it can be used in selenium too.
+	JUnit framework is used by java developers for unit testing their code.
+		-Unit code is nothing but a set of code we need to test. [Ex.Q_JUnit_Addition]
+Notes:
+->	Instead of creating a class we create a "JUnit test case" class
+	We can verify multiple test cases by using @Test before every test case.
+	@Test:  Will test individual test cases. 
+		- Each test case acts as a main method.
+	We are asking the system to verify by using Assert.assertEquals(expected, actual)
+->  
+*************************1/8/2016 (8_20)***********************************************
+Test Fixtures:
+	@Before, @After, @BeforeClass, @AfterClass
+@Before and @After: Also known as "setup" and "teardown" methods.
+@Before:
+	@Before
+	public void setup(){
+		System.out.println("Before method")
+	}
+	The above method is performed "before" every test case.
+	@Before: @-annotation.
+@Test
+	Test case.
+@After:
+	Similarly @After works "after" every test case.
+Why?: 
+	They are useful when we want to set up a test data; run test case; clean test data.
+@BeforeClass and @AfterClass: They must be static.
+	Will be executed only once and before and after @Before and @After classes respectively.
+	We can put the "test data" in @BeforeClass
+	Ex. In the dynamic form example; we can open the browser only once by using
+		@BeforeClass. All the test cases will be executed in the same window.
+		We have to make WebDriver object static for it to access in @BeforeClass and @AfterClass.
+		Ex. For only one user: Login page -> Do various steps(test cases) -> logout.
+			1.So for Login we use @BeforeClass. (we login once)
+			2.All the test cases are performed in the same page.
+			3.To logout, we use @AfterClass. (we logout once)
+		Ex. If we have to do for different accounts; we need to login and logout for every test case.
+			Here we use @Before and @After. It will login and logout for every test case.
+Next class: More selenium APIs and how to add add-ons.
+
+*******************************1/12/2016 (8_22)********************************
+Simple Task: Folder creation. 
+	We use contextClick() from Actions class to right click on an element. 
+	After we select to create a folder there is no need to find the webelement to sendKeys to name it. act.click().sendKeys("folder name").build().perform();
+	act.sendKeys(Keys.DELETE)-> We can use this to perform certain keyboard functions.
+	
+Skipping Test cases:
+	If you feel a test case is not ready or not ready to execute we use @Ignore annotation after the @Test annotation.
+	It executes the test case but says one skipped and shows no error even if the ignored test case has errors.
+Timeout in Test cases:
+	Aftter annotation @Test we add (timeout = desired time limit in milli seconds for the test case to finish performing)
+	will show an error "Timeout" if the test case doesn't finish performing within the desired time.
+	Written as  @Test(timeout = 3000).
+Thread.sleep:
+	Thread.sleep(time) will make a test case wait a desired amount of time before performing within two steps.
+	It also throws an exception called "org.junit.runners.model.TestTimedOutException: test timed out after 3000 milliseconds"
+Ex: Suppose we are logging in to a page is taking a long time like 7000 milli seconds; then we can tell the developer that
+	it takes a long time to log-in and fail the test case. 
+*****************************1/13/2016 (8_23)************************************
+Firefox profile and how to use it in webdriver.
+Office related profiles: Have office related URLs etc.
+Personal profiles: Banking information.
+We can create different profiles. Each profile we can name it and go to it. 
+Run-> firefox -ProfileManager
+We can check the location of profile by choosing troubleshooting.
+Every time we run our java script on eclipse to open a firefox driver, we are creating an anonymous profile.
+Find the profile location and create an object in a File class:
+	static File ffpDir = new File("C:\\Users\\Nimmala611\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\bocdyrsq.default");
+	- We can create different profiles and use the required environment for the automation. 
+Now create a FirefoxProflie object with and import the properties from "File ffpDir"
+	static FirefoxProfile ffp = new FirefoxProfile(ffpDir);
+Now create a webdriver object as usual and import the properties of FirefoxProfile "ffp"
+	static WebDriver task = new FirefoxDriver(ffp);
+Uses:
+	To avoid configurration related issues. 
+
+**********************************************************************
+	
+
+
+		
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
