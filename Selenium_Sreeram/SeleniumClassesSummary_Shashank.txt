@@ -1,0 +1,304 @@
+Selenium:-
+Class I
+
+//Creating driver object for the WebDriverClass.
+//driver.get("URL") :- To open Url of the page.
+//To find the Firstname WebElement using ID based Locator.driver.findElement(By.id()) or By.name());
+//Once the Webelemnt location is stored in firstName, use firstName.sendkeys(String) to type the String text in Firstname text field.
+//Obj.click() is used to click on the element on the page by creating a webElement Obj = driver.findElemnt();
+
+Class II
+This class was all about how to operate on Drop Down menus.
+//Locate the element and store the location in an WebElement Object.
+//Create a Select object for the values in the drop down and pass the location of the Dropdown menu.
+//Use the below operations using the select object depending on the nature of the values in the drop down. 
+/*
+* selectByVisibleText(String) cannot be used when the text in the dropdown is very large.It is tedious to type in the text.
+* selectByIndex() is used as the values in the drop down can be dynamic and changing.So instead of selectByValue here we use to select the desired target by Index.Index is a unique number given to each selection in the html code.
+* selectByValue(String) is used when we are particularly sure about the option to choose instead of checking all the values in the dropdown like selectByVisibleText()
+*/
+
+Class III
+This class is about the checkboxes on a webpage and the operations related to them.
+//Checking the checkbox whether it is checked or unchecked.
+* isSelected()- Gives Boolean output i.e Either TRUE or FALSE, when the check box is selected below.
+* Basically gives the current status of the element either a checkbox or radio button.
+
+This class also deals with the Multi select element on the webpage. 
+/*
+       * To Select Multiple Values on the preview.html page.
+       * isMultiple() gives a boolean value depending on the element selected whether it is Multi-select or not.
+       * deselectAll() clears the selection in the element focused.
+       * So basically,to perform operation on any element of the page:- 
+       * 1.Find and store the location of the element using driver.findElemene(By.id());
+       * 2.Create a pointer to select in the element if needed(For example for Dropdown or Multiple selection, we must use Select pointer = new Select(VariableWithLocationOfElement);
+       * 3.Perform any operation on the element.(For CheckBox or Radio buttons we can use .click()|||| For Multi Select or Drop down we can use the pointer to selectByIndex() or selectByValue(String) or selectByVisibleText(String).
+       * getAttribute("attribute")- Gives the value of the attribute in the location of the element in html code. 
+       */
+
+Class IV
+This class deals with the different kinds of Alerts,"OK"ing or "Cancel"ing the alerts using methods
+*switchTo().alert():- This command should be used by the instance created for the Webdriver( i.e driver) to be used to switch to the pop-up window showing up when clicked a specific button.
+	 *Always remember to perform the Alert operation, we must first shift focus to the alert using driver.swtichTo().alert().
+	 *And then we can perform other operations by getting the instance created for the Alert switchTo() and then use getText() or accept() methods.
+	 *Important thing to be noted here is to click on the OK button on the alert, we use accept() API and to to click on the Cancel button on the alert, we use dismiss() API;
+	 *Four simple steps to work on Alerts.
+	 *1.Find the location of the button which generates alert in a WebElemnt instance.
+	 *2.Click the Alert button using .click();
+	 *3.Now switch to the alert using switchTO().alert() operation and store the Alert in an instance.
+	 *4.Use .accept() to choose OK or .dismiss() to choose CANCEL on the alert using AlertObj.accept() or dismiss().
+	 *5.to read the text on the alert, choose alertObj.getText()--> String.
+
+Class V
+This class is about XPath Builder. on how to write xpath query from a .xml file.
+*The parent,child,sibling,ancestor and descendents are terminologies used in xpath.
+*Query by index :- /catalog/book[2]/author --> This gives the author of the second book.Index starts from 1.
+*Query by id :- /catalog/book[@id="bk103"]/title --> this gives the title of book with id 'bk103'
+*Install Firepath add-on on Firefox browser.
+*xpath is a simpler way to find the location of the element than using By.id or By.value
+*By inspaecting element from the browser and choosing Firepath to generate absolute path.
+*Relative Xpath is very much small and minimized compared to absolute xpath.
+*Absolute path may not work for windows or internet explorer.
+*Each browser may have a different DOM structure.In such scenarios the absolute xpath may fail.
+*http://www.w3schools.com/xpath/
+*All the elements in xml file are referred to as nodes. Ex :- <book> <title> <author>
+*The topmost element in the xml file is called ROOT NODE element. Ex:-<catalog> in Books.xml
+*Xpath query is all about writing specific coomands using the node names to find any element in the xml file.
+*Expressions to Select nodes :- 1.Nodename :- /book - Selects all thenodes within the node name <book>
+                                2. /       :- /catalog/book - Selects the from the rootnode <catalog>
+				3. //      :- //book :- Shows all the elements uder the node <book> no matter where the ode <book> is present in the xml file.
+				4.  .      :-  /catalog/book[1]/. - This expression selects the current node. in this case it selects Element <book> with index 1.
+				5. ..      :- /catalog/book/..  - This selects the parent node of the current node. in this case it selects and displays all the elemnts under <catalog>
+				6. @       :- //@id - Selects the attributes. in this case it selects the attribute 'id' no matter under what node it is defined.
+***Predicates in XML are used to find specific node or a node that contains a specific value.
+*Predicates are always enclosed in square brackets.
+*1./catalog/book[1] - selects the first element node with tag <book>
+2./catalog/book[last()] - Selects the last <book> element within the node catalog.
+3./catalog/book[last()-1] - Selects the last but one <book> element within the catalog node.
+4./catalog/book[position()<3] - Selects the first two <book> elements under catalog node.
+5.//book[@class] - Selects all the book elements with an attribute class.
+6.//book[id='bk106'] - Selects the book elements with value 'bk106'
+7./catalog/book[price>10] - Selects the book elements under catalog element which price element with value greater than 10.
+8.//catalog/book[price>10]/author - Selects all the author elements of the book elements which has price greater than 10.
+***Selecting Unknown Nodes
+-Using * :- /catalog/* - Selects all the child node elemnts under catalog.
+-Using //* :- Selects all the node elements in the xml document.
+-Using //book[@*] :- Selects all the atttributes iin element node <book> throughout the xml document.
+***Selecting Several Paths
+* we use the | operator in the xpath expression to select several paths.
+*1.//book/title | //book/price - Selects all the title AND price elements of the book elements.
+2.//title | //price - Selects all the title and price elements in the xml document.
+3./catalog/book/title | //price - Selects the title element of book elements AND slects all the price elements in the xml document.
+***XPath Axes
+syntax:- axisname::nodeset[Predicate]
+*Axis defines a node-set relative to the current node.
+*ancestor - Selects all ancestors(parents,grandparent) of the current node.
+*ancestor-or-self - Selects all ancestors of the current node and the current node itself.
+*attribute - Selects all attributes of the current node.
+*child - Selects all the children of the current node.
+*descendant - Selects all descendants of the current node.
+*descendant-or-self -Selects all descendants of the current node and the current node itself.
+*following - Selects everything in the document after closing tag of the current node.
+*following-sibling  -Selects all siblings after the current node.
+*namespace -Select all namespace nodes of the current nodes.
+*parent -Selects the parent of the current node.
+*preceding -Select all nodes that appear before the current node in the document,Except ancestors,attribute nodes and namespace nodes.
+*preceding-sibling  -Selects all siblings before the current node.
+*self -Selects the current node.
+***Xpath Operators |,+,-,*,div,=,!=,<,<=,>,>=,or,and,mod
+*Always start writing xpath from the element which has a unique static value for it's attribute.
+Examples to generate xpaths - http://dev.sencha.com/ext/5.0.1/examples/index.html
+Class
+
+***This class is all about forms and the ways to select a value from field which seems like a dropdown but is not actually a dropdown.
+*For dropdowns we use the Select class to choose from the list and we use APIs like selectByValue,selectByIndex or selectByVisibleText.
+*but for elements of these type we have to use loops or iteration.
+*For example to select a user predefined value :-
+  						1.We need to perform click() on the psuedo drop down button.
+						2.we need to get the size() of the "list" elements By.xpath("....../li") and store the total number of elements in int.
+						3.we need to use for loop with in which iterate the .getText() of each element in the list using xpath(......./li[" +i+"]").getText();
+						4.we need to use the desired value to be compared to the getText() string value using if(xxx.equalsIgnoreCase(yyy)) loop and perform the .click() API in this if loop.
+
+Important note here :-To retrieve the field which has input tag in the html, then it should always be selected by .getAttribute("value")
+For exaMPLE in the Binding Grid into Form, we have to select the value from the right pane input fields by giving the .getAttribute on the findElement(By.xpath("....../...../"));
+
+*** this class is all about how to automate Dynamic Data-Grids
+*This example below is for the BindingGridToForm.
+/**
+      *1. Find the Total number of Rows  in that Table/Grid.
+      * 2.Iterate through all the rows in the grid/table.
+      * 3.In each iteration try to find out the Company's name in particular row.
+      * 4.Compare every iteration company's name with the user desired company's name we want to check.
+      * 5.If both are matching then click on that company name.
+      * 6.Verify the company name selected in the grid is populated in the company Details section.
+      *     a.Verify Company Name
+      *     b.Verify company price....
+***The next class is about dragAndDrop() action.
+*To use this method,we should be able to create an instance for the Actions class and use the driver to be passed into the Actions class instance.
+           *** Ex :- Actions builder = new Actions(driver);
+*Now we can use this instance created for the Actions class to perform various actions:-
+      *click()-----contextClick()-----clickandHold()----doubleClick()----dragAndDrop(source,target)-----moveToElement() etc....
+* We should always use .perform() at the end of every operation using Actions class.
+*Point to be noted here is,we can create different instances for Actions class to perform different other mouse and keyboard events. 
+
+Class-JUnit Framework 
+****This class discusses How JUnit overcomes the drawback of Java language.
+**To report the test cases which are run in JUnit.
+**Verify through println or comsole statements using 'Asserts'.When this command tis given under any @Test annotation, and if it gives false on an assert, the test case will fail.
+**To write individual testcase, we use the annotation @Test
+******************Test Fixtures**********
+**@Test - is nothing but under which a method is created with test in the method name and code written under it.
+**@Ignore can be specified to leave a partcular testcase from execution.
+**@Before annotation is executed before every @Test annotation code.
+**@After annotation is executed after every @Test annotation code.
+**@BeforeClass,@AfterClass are the annotations which are setup before the class and after the class.
+**@BeforeClass is created to pass the test data into the tests
+** The methods under both these annotations must be '''static'''
+**For example,if we take WellsFargo.com --> Log in to my account --> 1.Check Balance --->Log Out.
+								     2.Transfer Money
+ 				 	 	 	 	     3.Pay Credit Card
+ 					*Now We use @BeforeClass for log-in functionality.@Test for rest of the tets.@AfterClass to Log out.
+**For Example, if we have to login with user1 and check his balance --> Log out --> Log in with user2 --> Transfer balance. -->Log Out.
+					*Here we use @BeforeClass to open wellsfargo.com.Then we write the log in and check balance in the @Test code for each test case.
+Class-
+**This class is about 'timeouts'.
+*We can specify the time within the execution of the test case can be specified.
+*@Test(timeout=milliseconds)--> @Test must be annotated this way to set a timeout for that particular testcase.
+
+******************Profiles**********
+Class-
+** This class is about the profiles in firefox.
+*To create a firefox profile,go to run --> firefox.exe -p --> Create a profile.
+*To see the profiles directory, we must use about:support in the firefox browser and check for the profile directory.
+*Profile is nothing but it is collection of settings specific to that profile in the firefox.This is helpful when we choose a particular profile and it gives the different settings.
+*It stores the information related to that profile when we browse firefox using that profile.
+*To pass the profile to the program we are running we must use the following procedure.
+* Firstly pass the file with the profile into an instance > Create an istance for FirefoxProfile class and pass the file into this > Pass the FirefoxProfile instance into the FirefoxDriver class and create an object.
+		File fileDir = new File("C:\\users\\user.......\\Profiles\\....default");
+        FirefoxPrfile ffprofile = new FirefoxDriver(fileDir);
+     `	WebDriver driver = new FirefoxDrive(ffprofile);
+* This creates an anonymous profile which is similar to the .default profile in the directory and deleted when the driver.quit() command is specified in the program.
+*This Creation and running of a profile is used, if we have a Test which uses the existing configuration of a firefox browser.Now if we want to run the testcase, we will have to again create the configuration to replicate the browser we are using.
+**So,we will copy the profile and access the profile using the Selenium FirefoxProfile class. This will keep the browser configuration intact as when the test code was written.This helps in overcoming configuration related issues.
+
+******************NetExport**********
+Class - NetExportXPI    firebugXPI
+**This class is about how we use the firexox profile to add extensions to the browser dynamically.
+*To set preferences to the browser using instance created for the profile.
+*So now we check the extensions by typing about:config in the browser.
+*To add the two extensions netExportXPI and firebugXPI to the test browser dynamically we must follow the following procedure.
+				--Store the respective .XPI files in an instance created by File instance = new File("....location.....");
+				-- Now Create an instance for a new FirefoxProfile().
+				--Pass this instance into profileInstance.addExtension(XPIFile Instance);
+				--Now to set a preference ,first check the nature of the preference from about:config in the browser.
+				--Then, use profileItsance.setPreference(String,String) OR profileinstance.setPreference(String,Boolean) OR profile.setPreference(String,Int)
+
+******************Proxy**********
+Class is about understanding Proxys,DesiredCapabilities Class ------INTERVIEW------
+*To set manual proxys,we need to first create an instance for Proxy class.
+*Then use this instance for the methods setHTTPproxy(String:xxx),setFTPproxy(String:xxx) etc.
+*We set proxys to contact the proxy server of the organisation which are set to the browser.This helps in filtering the requests or websites accessible from the internet or webserver.
+*This is also set when we work on intranet applications.
+
+*To pass any proxy,profile related information to FirefoxDriver() then we need an instance for DesireCapability class.
+*We store all the proxy,profile related info in the instance created for the DesiredCapability class(using .setCapability() method) and then pass this instance into FirefoxDriver(instancefor DesiredCapability);
+
+Certificates:To accept all the certificates we must be using this method firefoxprofileInstance.setAcceptUntrustedCertificates(true);
+
+Class 
+*Taking screenshots while the test execution is going on.
+*First we must cast 'driver' object using takescreenhot and use getScreenshotAs(OutputType.File)--> ((TakeScreenshot)driver).getScreenshotAs(OutputType.FILE)
+*getScreenshot(OutputType.xxxx):- This method or API is used to take the screenshot and entitle it to a particular output type.
+               Outputs can be either FILE,Base64 or BYTES.
+*BASE64 gives screenshot with a STRING output.
+*We now use the FileUtils class and the copyFile(srcFile,destFile) method to copy the destFile which is where we see the output on the harddrive.
+
+*Creating TestSuite
+Use test fixture @RunWith(Suite.class)
+                 @Suite.SuiteClasses({test1.class,test2.class,test3.class})
+
+***Advantages of TestNG over JUnit
+1.Run only Failed Classes
+
+2.Cutomization of the test case execution (Ex:- If we have 100 test cases and we want to run few specific test cases , this is not possib;e in JUnit)
+
+3.Automatic Report Generation. (unlike ANt in TestNG)
+
+4.Execution of test cases through Groups (Ex: Regression Test cases can be a group,similarly Smoke Test cases can be grouped, etc But in JUnit we do not have the mechanism to execute groups.)
+
+5.Flexibility of Configuration (????)
+
+6.Data Driven Testing (Running the same test case with different datasets. For example getting data from Excel sheet.)
+
+7.Custom Verification (Choosing where to stop the execution with verification)
+
+8.On Failure do something (Failure of a test case should invoke any actions.This can be done better in TestNG than JUnit.)
+
+9.Dependency (If we have 3 testcases. We want to execute testcase 2 nd 3 only after execution of testcase 1. Then it is possible in TestNG. where testcases are dependent on a specific testcase.)
+
+10.Prioritizing the execution of the Test Cases.
+
+11.Run multiple test cases parallely. All at the same time.
+
+12.Listeners(???)
+
+13.Report Logging(???)
+
+14.Parameterization
+************************************************************************TestNG**********************************************************************************
+**Annotations in testNG
+*@BeforeClass - This helps you to execute any code within it,even before the code in the java class starts executing.
+      *Typically we write the Database connection info in this. 
+*@BeforeTest - The code under this annotation is executed before the execution of all the @Test annotations.
+      *This is executed only once.
+*@AfterTest - The code under this annotation is executed after the execution of all the @Test annotations.
+      *This is executed only once.
+*@BeforeMethod -This helps you to execute the code within it, BEFORE every @Test and the method within it.
+      *We can write the code to open the browser and get the base URL.
+      *It is similar to @Before test fixture in JUnit.
+*@AfterMethod - This helps you to execute the method within it,after every method execution.
+      *We can write the code to close browser under this.
+      *This is similar to @After test fixture in JUnit.
+
+*To run the testng tests as suite,we need to write xml code under the prject.
+*Create a .xml file under the Project directly.
+*Then,write xml code as follows.
+*****************
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Sample Test Suite">
+<test name="test1">
+<classes>
+class name="packageName.ProgramClassName1">
+<methods>
+<include name='methodName1'/>
+<include name='methodName2'/>
+<include name='methodName3'/>
+</methods>
+<</class>
+</classes>
+</test>
+
+<test name="test2">
+<classes>
+<class name="packageName.ProgramClassName2">
+<methods>
+<exclude name='methodName1'/>
+<exclude name='methodName2'/>
+</methods>
+</class>
+</classes>
+</test>
+</suite>
+******************************
+* The order of tags will be like:- suite -->Groups--> test-->classes-->class-->methods-->Include or Exclude
+*If we want skip the TestNG test case .we must do the following
+                 *In the @BeforeTest annotation, we must use "throw new SkipException(String message)"
+* We use groups in the testng.xml file to organise our test methods on what to be included or excluded.
+*Not only can you declare that methods belong to groups, but you can also specify groups that contain other groups.This is done in the .java code against the @Test annotation.
+               Ex:- @Test(groups={"functest","InitTest"})
+                    public void test1(){}
+                   **This means test1() method belongs to both "functest" and "InitTest" groups.
+		   **Now this must be invoked in the configuration .xml file
+                   <test name="Daily Test">
+		   <groups><run><include name=""functest"></include></run></groups>
+                   
