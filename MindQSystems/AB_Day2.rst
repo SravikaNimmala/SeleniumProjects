@@ -31,8 +31,7 @@
 **Testing**
    - Two types:
       - Manual Testing: Hybrid process and agile process
-      - Automation: There are two mostly used software right now in the industry. QTP and Selenium are the two current automation tools in the market that are currently widely used and known. But Selenium is open source and hence might take over everywhere.
-         - It is important to learn the formula of Selenium instead of focusing on the constants.
+      - Automation: There are two mostly used software right now in the industry. QTP and Selenium are the two current automation tools in the market that are currently widely used and known. But Selenium is open source and hence might take over everywhere. It is important to learn the formula of Selenium instead of focusing on the constants.
 
 **Manual Testing**
    - When we talk about testing **QUALITY** is the key word. But what is quality? The internal factor of customer is the feeling of satisfaction. When the requirements are met of the customer then the "satisfied" quality is achieved. 
