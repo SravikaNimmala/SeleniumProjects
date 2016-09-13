@@ -1,5 +1,5 @@
 9/12/2016 - Day 3
-#################
+##################
 
 **QUALITY**
 	- (recap): Quality is meeting the customer's requirements. A test engineer must know the requirements and must be met.
