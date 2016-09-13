@@ -1,5 +1,5 @@
-9/8/2016 - Day 2
-################
+ 9/8/2016 - Day 2
+#################
 
 **Need for testers to the industry when developers could test**
    - Multiple tasks are assigned to the developers.
