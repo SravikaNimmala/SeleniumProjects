@@ -1,0 +1,336 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ins",
+				"instruction"
+			],
+			[
+				"int",
+				"inst"
+			],
+			[
+				"MA",
+				"Machine"
+			],
+			[
+				"c",
+				"c_str"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "A_Day5.rst",
+			"settings":
+			{
+				"buffer_size": 1098,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Nimmala611/Desktop/H2k/H2K_Demo_7.23.'16/Day1",
+			"settings":
+			{
+				"buffer_size": 12299,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Java_Basics.java",
+			"settings":
+			{
+				"buffer_size": 645,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Nimmala611/SeleniumProjects/SeleniumProjects/MindQSystems/A_Day4.rst",
+		"/C/Users/Nimmala611/SeleniumProjects/SeleniumProjects/MindQSystems/A_Day3.rst",
+		"/C/Users/Nimmala611/Desktop/H2k/H2K_Demo_7.23.'16/Day1",
+		"/C/Users/Nimmala611/SeleniumProjects/SeleniumProjects/MindQSystems/Day3.rst",
+		"/C/Users/Nimmala611/SeleniumProjects/SeleniumProjects/MindQSystems/AC_Day3.rst",
+		"/C/Users/Nimmala611/SeleniumProjects/SeleniumProjects/MindQSystems/AB_Day2.rst",
+		"/C/Users/Nimmala611/SeleniumProjects/SeleniumProjects/MindQSystems/A_Orientation.rst",
+		"/C/Users/Nimmala611/cosc2325/LabProjects/Lab_5_NASM/graded",
+		"/C/Users/Nimmala611/cosc2325/LabProjects/Lab3_Simulator/MIPS-CPU-Simulator-master/regs",
+		"/C/Users/Nimmala611/cosc2325/LabProjects/Homework_Assignments/HW2_CommonDataStorage.rst",
+		"/C/Users/Nimmala611/cosc2325/LabProjects/Homework_Assignments/HW3_TimeForATimeOut.rst",
+		"/C/Users/Nimmala611/Desktop/installation (1).rst",
+		"/C/Users/Nimmala611/cosc2325/LabProjects/Lab5_ASM/test_output_nasm.asm",
+		"/C/Users/Nimmala611/cosc2325/LabProjects/Lab5_ASM/test_if_nasm.asm",
+		"/C/Users/Nimmala611/cosc2325/LabProjects/Lab5_ASM/test_count_nasm.asm",
+		"/C/Users/Nimmala611/cosc2325/LabProjects/Lab5_ASM/test_while.c",
+		"/C/Users/Nimmala611/cosc2325/LabProjects/Lab5_ASM/hello.asm",
+		"/C/Users/Nimmala611/cosc2325/LabProjects/Lab5_ASM/test_while_nasm.asm",
+		"/C/Users/Nimmala611/cosc2325/LabProjects/Lab5_ASM/test_output.c",
+		"/C/Users/Nimmala611/cosc2325/LabProjects/Lab5_ASM/test_if.c",
+		"/C/Users/Nimmala611/cosc2325/LabProjects/Lab5_ASM/test_count.c",
+		"/C/Users/Nimmala611/cosc2325/LabProjects/Lab5_ASM/test_basic.c",
+		"/C/Users/Nimmala611/cosc2325/LabProjects/Lab2_Texas_Four_Step/memory.cpp",
+		"/C/Users/Nimmala611/cosc2425/LabProjects/Lab2_Texas_Four_Step/instructions.h",
+		"/C/Users/Nimmala611/cosc2425/LabProjects/Lab2_Texas_Four_Step/main.cpp",
+		"/C/Users/Nimmala611/cosc2425/LabProjects/Lab2_Texas_Four_Step/controller.h",
+		"/C/Users/Nimmala611/cosc2425/LabProjects/Lab2_Texas_Four_Step/io.h",
+		"/C/Users/Nimmala611/cosc2425/LabProjects/Lab2_Texas_Four_Step/alu.h",
+		"/C/Users/Nimmala611/cosc2325/LabProjects/Homework_Assignments/HW1/documentation.txt",
+		"/C/Users/Nimmala611/cosc2425/LabProjects/Lab1_RPN_Calculator/instructions.h",
+		"/C/Users/Nimmala611/cosc2425/LabProjects/Lab1_RPN_Calculator/alu.cpp",
+		"/C/Users/Nimmala611/cosc2425/LabProjects/Lab1_RPN_Calculator/alu.h",
+		"/C/Users/Nimmala611/cosc2425/LabProjects/Lab1_RPN_Calculator/control.h",
+		"/C/Users/Nimmala611/cosc2425/LabProjects/Lab1_RPN_Calculator/memory.h",
+		"/C/Users/Nimmala611/cosc2425/LabProjects/Lab1_RPN_Calculator/io.h",
+		"/C/Users/Nimmala611/cosc2425/LabProjects/Lab1_RPN_Calculator/control.cpp",
+		"/C/Users/Nimmala611/cosc2425/LabProjects/Lab1_RPN_Calculator/io.cpp",
+		"/C/Users/Nimmala611/cosc2425/LabProjects/Lab1_RPN_Calculator/memory.cpp",
+		"/C/Users/Nimmala611/cosc2425/LabProjects/Lab1_RPN_Calculator/main.cpp",
+		"/C/Users/Nimmala611/cosc2425/LabProjects/Lab1_RPN_Calculator/test.txt",
+		"/C/Users/Nimmala611/cosc2425/LabProjects/Lab1_RPN_Calculator/.gitignore",
+		"/C/Users/Nimmala611/cosc2425/LabProjects/Homework_Assignments/HW1/main.cpp",
+		"/C/Users/Nimmala611/cosc2425/LabProjects/Homework_Assignments/HW3_TimeForATimeOut.rst",
+		"/C/Users/Nimmala611/Desktop/Summer'16/PcAssembly/HomeworkAssignments/HW2_CommonDataStorage.rst",
+		"/C/Users/Nimmala611/cosc2425/LabProjects/Homework_Assignments/HW1/output.cpp",
+		"/C/Users/Nimmala611/Desktop/Summer'16/PcAssembly/HomeworkAssignments/HW3_TimeForATimeOut.rst"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "A_Day5.rst",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1098,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								517,
+								517
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RestructuredText/reStructuredText.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/Nimmala611/Desktop/H2k/H2K_Demo_7.23.'16/Day1",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12299,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7987,
+								7987
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3030.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Java_Basics.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 645,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								645,
+								645
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "AC_Day3.rst",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 50.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
