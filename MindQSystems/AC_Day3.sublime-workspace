@@ -27,7 +27,31 @@
 			"file": "A_Day5.rst",
 			"settings":
 			{
-				"buffer_size": 1098,
+				"buffer_size": 2958,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "A_Day8.rst",
+			"settings":
+			{
+				"buffer_size": 1811,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "A_Day6.rst",
+			"settings":
+			{
+				"buffer_size": 67,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "A_Day7.rst",
+			"settings":
+			{
+				"buffer_size": 59,
 				"line_ending": "Windows"
 			}
 		},
@@ -129,7 +153,7 @@
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -143,6 +167,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"**"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -160,7 +185,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -169,15 +194,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1098,
+						"buffer_size": 2958,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								517,
-								517
+								134,
+								134
 							]
 						],
 						"settings":
@@ -193,6 +218,90 @@
 				},
 				{
 					"buffer": 1,
+					"file": "A_Day8.rst",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1811,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1809,
+								1809
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RestructuredText/reStructuredText.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 432.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "A_Day6.rst",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 67,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								35,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RestructuredText/reStructuredText.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "A_Day7.rst",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 59,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								57,
+								59
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RestructuredText/reStructuredText.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"file": "/C/Users/Nimmala611/Desktop/H2k/H2K_Demo_7.23.'16/Day1",
 					"semi_transient": false,
 					"settings":
@@ -217,11 +326,11 @@
 						"translation.y": 3030.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 5,
 					"file": "Java_Basics.java",
 					"semi_transient": false,
 					"settings":
@@ -245,7 +354,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -253,7 +362,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 23.0
 	},
 	"input":
 	{
@@ -290,7 +399,7 @@
 	"project": "AC_Day3.rst",
 	"replace":
 	{
-		"height": 0.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":
