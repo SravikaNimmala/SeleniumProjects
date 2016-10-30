@@ -35,15 +35,27 @@
 			"file": "A_Day6.rst",
 			"settings":
 			{
-				"buffer_size": 67,
+				"buffer_size": 1120,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "A_Day7.rst",
+			"file": "/C/Users/Nimmala611/Desktop/MindQSystems/New folder/(10.6)Test_Execution",
 			"settings":
 			{
-				"buffer_size": 59,
+				"buffer_size": 2825,
+				"line_ending": "Windows",
+				"name": "Test Execution:"
+			}
+		},
+		{
+			"contents": "9/19/2016 - Day 7\n#################\n\n**Methods of Testing**\n\n	- Application = Program + Functionality\n	- ",
+			"file": "A_Day7.rst",
+			"file_size": 62,
+			"file_write_time": 131187850048925704,
+			"settings":
+			{
+				"buffer_size": 105,
 				"line_ending": "Windows"
 			}
 		},
@@ -175,6 +187,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"the",
 			"**"
 		],
 		"highlight": true,
@@ -193,7 +206,7 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -219,10 +232,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 615.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -231,15 +244,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 67,
+						"buffer_size": 1120,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								35,
-								0
+								809,
+								809
 							]
 						],
 						"settings":
@@ -247,27 +260,56 @@
 							"syntax": "Packages/RestructuredText/reStructuredText.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 16.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "A_Day7.rst",
+					"file": "/C/Users/Nimmala611/Desktop/MindQSystems/New folder/(10.6)Test_Execution",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 59,
+						"buffer_size": 2825,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								59,
-								59
+								1183,
+								1183
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Test Execution:",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "A_Day7.rst",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 105,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								105,
+								105
 							]
 						],
 						"settings":
@@ -278,11 +320,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "A_Day8.rst",
 					"semi_transient": false,
 					"settings":
@@ -310,7 +352,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "/C/Users/Nimmala611/Desktop/H2k/H2K_Demo_7.23.'16/Day1",
 					"semi_transient": false,
 					"settings":
@@ -335,11 +377,11 @@
 						"translation.y": 3030.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "Java_Basics.java",
 					"semi_transient": false,
 					"settings":
@@ -363,11 +405,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"semi_transient": false,
 					"settings":
 					{
@@ -390,7 +432,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
