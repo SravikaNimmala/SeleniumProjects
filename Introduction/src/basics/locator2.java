@@ -12,7 +12,7 @@ WebDriver driver2 = new FirefoxDriver();
 driver2.get("http://gmail.com");
 driver2.findElement(By.xpath(" .//*[@id='Email']")).sendKeys("sravika.nimmala@g.austincc.edu");
 driver2.findElement(By.name("signIn")).click();
-driver2.findElement(By.name("Passwd")).sendKeys("texic@n63");
+driver2.findElement(By.name("Passwd")).sendKeys("");
 driver2.findElement(By.xpath(".//*[@id='signIn']")).click();
 
 	}
